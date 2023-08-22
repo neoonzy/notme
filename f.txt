@@ -1,0 +1,17 @@
+<form action="solicita.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" value="21831" name="id_aluno">
+        <input type="hidden" value="2023/05/27" name="data_hora">
+        <input type="hidden" value="A" name="refeicao">
+        <a href="#modal_confirma_solicitacao"><button type="button" class="btn centro">Solicitar Refeição</button></a>
+        <!-- Modal - Estrutra da Janela Sobre... -->
+        <div id="modal_confirma_solicitacao" class="modal open" style="z-index: 1003; display: block; opacity: 1; transform: scaleX(1); top: 10%;">
+            <div class="modal-content">
+                <h4>Confirmação</h4>
+                <h5>Confirma solicitação da janta para hoje?</h5>
+            </div>
+            <div class="modal-footer">
+                <input class="btn " type="submit" id="enviar informações" value="Solicitar almoco">
+                <a href="#" class="modal-action modal-close waves-effect waves-red btn-flat">Fechar</a>
+            </div>
+        </div> <!-- Finda da janela Modal - -->
+    </form>
